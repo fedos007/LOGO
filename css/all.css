@@ -1,0 +1,465 @@
+@font-face {
+    font-family: 'avenirregular';
+    src: url('../fonts/avenir_roman-webfont.eot');
+    src: url('../fonts/avenir_roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir_roman-webfont.woff2') format('woff2'),
+         url('../fonts/avenir_roman-webfont.woff') format('woff'),
+         url('../fonts/avenir_roman-webfont.ttf') format('truetype'),
+         url('../fonts/avenir_roman-webfont.svg#avenirregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	margin: 0;
+	font: 14px/21px 'avenirregular', Arial, sans-serif;
+	color: #000;
+	background: #fff;
+	min-width: 320px;
+}
+* {
+	-webit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wrapper-header {
+	background-color: #f7fdfe;
+}
+.header {
+	max-width: 950px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	padding: 35px 10px;
+}
+.header .logo {
+	display: block;
+	background: url("../img/logo-header.png") no-repeat;
+	width: 86px;
+	height: 22px;
+	text-indent: -9999px;
+}
+.navigation ul {
+	float: right;
+	padding:0;
+	list-style:none;
+	margin: -17px 0 0;
+	white-space: nowrap;
+}
+.navigation li {
+	display:inline-block;
+	padding-left: 35px;
+}
+.navigation li:last-child {
+	padding-right: 35px;
+	margin-left: 35px;
+}
+.navigation li a {
+	color: #82868f;
+	font-size: 14px;
+	font-weight: 200;
+	text-decoration: none;
+}
+.navigation li a.active,
+.navigation li a:hover {
+	background-color: #0ebfdd;
+	border-radius: 50px;
+	padding: 10px 35px;
+	color: #f7fdfe;
+	font-weight: 400;
+	margin: -10px -35px;
+}
+.navigation+.menu {
+	display: none;
+}
+.header:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+.wrapper-promo {
+	background: url("../img/bg-promo.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 35%;
+	padding-bottom: 5%;
+	text-align: center;
+}
+.promo {
+	margin: 0 auto;
+	max-width: 950px;
+	padding: 0 50px;
+	text-align: center;
+}
+.promo h1 {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 10px 40px;
+	color: #f7fdfe;
+	font-size: 44px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+.promo span {
+	display: block;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 28px;
+	color: #f7fdfe;
+	margin: 20px 0 0;
+	padding: 10px;
+}
+.promo h1:before,
+.promo h1:after {
+	content: "";
+	position: absolute;
+	background: url("../img/ico-stars.png") no-repeat;
+	width: 12px;
+	height: 12px;
+	top: 20px;
+}
+.promo h1:before {
+	left: 20px;
+}
+.promo h1:after {
+	right: 20px;
+}
+.articles {
+	max-width: 950px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 75px 60px;
+	background-color: #fff;
+}
+.articles h1 {
+	margin: 0;
+	color: #0ebfdd;
+	font-size: 44px;
+}
+.articles .article {
+	margin: 0;
+	font-size: 18px;
+	line-height: 28px;
+	color: #45494d;
+	padding-top: 40px;
+}
+.wrapper-features {
+	background-color: #0ebfdd;
+}
+.features {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 60px 100px;
+	text-align: center;
+}
+.features h1 {
+	margin: 0;
+	font-size: 44px;
+	color: #fff;
+}
+.features-block {
+	text-align: center;
+	padding: 100px 10px;
+	margin: 0 auto;
+}
+.features-block .foto-block {
+	display: inline-block;
+	padding: 0 70px 0 0;
+}
+.features-block .foto-block:last-child {
+	padding-right: 0;
+}
+.features-text {
+	margin: 10px 0;
+	text-align: center;
+	font-size: 18px;
+	color: #f7fdfe;
+}
+.features-text span {
+	font-size: 16px;
+	font-style: italic;
+}
+.button {
+	display: inline;
+	text-align: center;
+	padding: 15px 45px;
+	border: 1px solid #f9fbfb;
+	border-radius: 50px;
+	background-color: #0ebfdd;
+}
+.button a {
+	font-size: 14px;
+	color: #f7fdfe;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.button:hover,
+.button:focus {
+	background-color: #f9fbfb;
+}
+.button a:hover,
+.button a:focus {
+	color: #0ebfdd;
+}
+#map {
+	width: 100%;
+	height: 600px;
+}
+.wrapper-footer {
+	width: 100%;
+	background-color: #45494d;
+}
+.footer,
+.nav-footer-bottom,
+.copyright {
+	max-width: 950px;
+	margin: 0 auto;
+}
+.footer {
+	padding: 20px;
+	overflow: hidden;
+	border-bottom: 1px solid #5a5e62;
+}
+.nav-footer-contacts ul {
+	float: left;
+	margin: 0;
+	list-style: none;
+	margin-top: 10px;
+	white-space: nowrap;
+}
+.nav-footer-contacts ul li {
+	display: inline-block;
+	padding-right: 35px;
+
+}
+.nav-footer-contacts ul li a {
+	text-decoration: none;
+	color: #d7dee4;
+	font-size: 12px;
+}
+.nav-footer-contacts ul li a:hover,
+.nav-footer-contacts ul li a:focus {
+	color: #45494d;
+	background-color: #d7dee4;
+	padding: 10px 20px;
+	border-radius: 50px;
+	margin: -10px -20px;
+}
+.footer .social {
+	float: right;
+}
+.footer .social a {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #d7dee4;
+	border-radius: 50%;
+	padding: 10px 20px;
+	text-indent: -9999px;
+	margin-left: 5px;
+}
+.footer .social a:before {
+	content: "";
+	position: absolute;
+	background: url("../img/ico-social.png") no-repeat;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	left: 50%;
+	margin: -10px 0 0 -10px;
+}
+.footer .social a.gmail:before {
+	background-position: 0 0;
+}
+.footer .social a.fasebook:before {
+	background-position: -20px 0;
+}
+.footer .social a.twitter:before {
+	background-position: -40px 0;
+}
+.footer .social a:hover,
+.footer .social a:focus {
+	opacity: 0.3;
+}
+.nav-footer-bottom {
+	padding: 15px 15px 30px;
+}
+.nav-footer-bottom ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav-footer-bottom ul li {
+	display: inline-block;
+	padding-left: 30px;
+}
+.nav-footer-bottom ul li:first-child {
+	padding-left: 0;
+}
+.nav-footer-bottom ul li a {
+	position: relative;
+	text-decoration: none;
+	color: #73767a;
+	font-size: 12px;
+}
+.nav-footer-bottom ul li a:after {
+	content: "|";
+	position: absolute;
+	width: 2px;
+	height: 14px;
+	right: -15px;
+}
+.nav-footer-bottom ul li a:hover,
+.nav-footer-bottom ul li a:focus {
+	color: #d3dae0;
+	border-bottom: 1px solid #d3dae0;
+}
+.copyright a {
+	float: right; 
+	text-decoration: none;
+	color: #73767a;
+	font-size: 12px;
+	margin: 15px 15px 0;
+	padding:0 15px;
+}
+.copyright a:hover,
+.copyright a:focus {
+	color: #d3dae0;
+}
+@media screen and (max-width: 780px) {
+	.features {
+		padding: 50px 30px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.features {
+		padding: 50px 20px;
+	}
+	.features-block {
+		padding: 50px 10px;
+	}
+	.features-block .foto-block {
+		padding-right: 20px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.header {
+		padding: 20px 10px;
+	}
+	.navigation ul {
+		display: none;
+	}
+	.navigation .menu:after {
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 30px;
+		top: 15px;
+		right: 10px;
+		background-color: #0ebfdd;
+		border-radius: 2px;
+	}
+	.navigation .menu:before {
+		content: "";
+		width: 30px;
+		height: 3px;
+		background-color: #fff;
+		box-shadow: 0 -8px 0 0 #fff,
+		0 8px 0 0 #fff;
+		position: absolute;
+		top: 29px;
+		right: 20px;
+		z-index: 1;
+	}
+	.menu:hover>ul {
+		display: block;
+	}
+	.navigation ul {
+		margin-top: 0;
+	}
+	.navigation li {
+		display: block;
+	}
+	.navigation li {
+		padding: 10px 100px;
+	}
+	.navigation li:last-child {
+		margin-right: 70px;
+		margin-left: 0;
+	}
+	.navigation li a {
+		font-size: 11px;
+	}
+	.navigation li a.active,
+	.navigation li a:hover {
+		padding: 10px 100px;
+		margin: -10px -100px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.promo {
+		padding: 100px 20px 50px;
+	}
+	.promo h1 {
+		font-size: 30px;
+	}
+	.promo span {
+		font-size: 14px;
+		line-height: 21px
+	}
+	.articles h1 {
+		font-size: 38px;
+	}
+	.articles .article {
+		font-size: 14px;
+		line-height: 21px
+	}
+	.features {
+		padding: 50px 5px;
+	}
+	.features-block .foto-block {
+		display: block;
+		padding-right: 0;
+	}
+	.nav-footer-contacts ul {
+		display: block;
+	}
+	.nav-footer-contacts ul li {
+		padding-right: 25px;
+	}
+	.footer .social {
+		display: block;
+		margin-top: 15px;
+	}
+	.footer .social a {
+		margin: 10px 35px 10px 0;
+	}
+	.nav-footer-bottom {
+		padding: 15px 10px 20px;
+	}
+	.nav-footer-bottom ul {
+		display: block;
+	}
+	.nav-footer-bottom ul li {
+		display: inline-block;
+		padding-left: 5px;
+	}
+	.nav-footer-bottom ul li:first-child {
+		padding-left: 0;
+	}
+	.nav-footer-bottom ul li a {
+		color: #d3dae0;
+		font-size: 10px;
+	}
+	.nav-footer-bottom ul li a:after {
+		content: none;
+	}
+	.copyright a {
+		font-size: 10px;
+		margin: 0;
+	}
+	#map {
+		height: 300px;
+	}
+}
